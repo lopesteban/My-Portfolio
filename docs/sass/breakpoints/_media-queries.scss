@@ -1,0 +1,55 @@
+//First Breakpoint
+@media (max-width: 976px) {
+  //Work section
+  .project-card {
+    width: 46%;
+  }
+  //Stack section
+  .tech {
+    width: 160px;
+  }
+}
+
+//Second breakpoint
+@media (max-width: 816px) {
+  //Home section
+  .socials {
+    display: none;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  //Work section
+  .project-card {
+    width: 70%;
+  }
+}
+//Third section
+@media (max-width: 620px) {
+  //Contact section
+  .contact-section {
+    form {
+      width: 90%;
+    }
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control {
+    width: 95%;
+    margin-top: 3px;
+  }
+}
+
+//Fourth breakpoint
+@media (max-width: 530px) {
+  //Home section
+  .title {
+    font-size: 2rem;
+  }
+  .sub-title {
+    font-size: 1.2rem;
+  }
+}

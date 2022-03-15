@@ -1,0 +1,20 @@
+.about-me-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+.aboutme-text-container {
+  width: 50%;
+  text-align: center;
+  opacity: 0;
+
+  img {
+    object-fit: cover;
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px;
+  }
+}

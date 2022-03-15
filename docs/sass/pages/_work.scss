@@ -1,0 +1,64 @@
+@use "../themes/colours" as c;
+
+.work-section {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  width: 30%;
+  height: 50%;
+  box-shadow: 0 3px 15px #000;
+  border-radius: 5px;
+
+  margin: 0 1rem 2.5rem;
+  opacity: 0;
+
+  a {
+    text-decoration: none;
+    color: c.$complementary-color;
+  }
+  a:hover {
+    padding: 1%;
+    border-radius: 5px;
+    background-color: c.$complementary-color;
+    color: c.$font-color;
+  }
+}
+
+.project-card:hover {
+  box-shadow: 0 3px 15px c.$complementary-color;
+  border: solid 1px c.$complementary-color;
+  color: c.$complementary-color;
+}
+
+.project-image {
+  object-fit: cover;
+  height: 55%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.subtext {
+  font-size: 15px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: c.$complementary-color;
+}

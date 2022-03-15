@@ -1,0 +1,40 @@
+@use "../themes/colours" as c;
+
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+
+  ul {
+    display: flex;
+    padding: 10px;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 5px 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  a:hover {
+    color: c.$complementary-color;
+  }
+}
+
+.options {
+  display: flex;
+
+  a {
+    margin: 40px 10px;
+  }
+}

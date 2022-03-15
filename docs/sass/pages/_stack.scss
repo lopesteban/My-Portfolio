@@ -1,0 +1,36 @@
+@use "../themes/colours" as c;
+
+.stack-section {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.stack-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tech {
+  width: 140px;
+  height: 12rem;
+  background-color: c.$complementary-color;
+  color: c.$font-color;
+  font-weight: 500;
+  box-shadow: 0 3px 15px #000;
+  border-radius: 5px;
+  margin: 0 1rem 2.5rem;
+
+  svg {
+    width: 90%;
+    height: 80%;
+    fill: c.$font-color;
+  }
+}

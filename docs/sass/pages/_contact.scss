@@ -1,0 +1,56 @@
+@use "../themes/colours" as c;
+
+.contact-section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5.5rem;
+
+  form {
+    width: 50%;
+
+    button {
+      width: 100%;
+      background-color: c.$complementary-color;
+      color: c.$font-color;
+      border: none;
+      border-radius: 5px;
+      font-family: "Josefin Sans", sans-serif;
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+
+  textarea {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px 0;
+  }
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 3px;
+}
+
+.form-control:focus,
+textarea:focus {
+  outline: 0;
+  background-color: rgb(240, 64, 31);
+  color: c.$font-color;
+}
