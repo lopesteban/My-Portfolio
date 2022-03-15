@@ -295,6 +295,10 @@ textarea:focus {
   color: white;
 }
 
+.thank-you-title {
+  font-size: 4rem;
+}
+
 @media (max-width: 976px) {
   .project-card {
     width: 46%;
